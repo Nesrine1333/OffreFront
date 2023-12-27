@@ -1,0 +1,134 @@
+/* dashboard.component.css */
+
+.dashboard-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  
+  .dashboard-content {
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  a {
+    /* Add styles for the anchor tags */
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+    color: #375a7f; /* Change the color as needed */
+  }
+
+  
+  a input {
+    /* Add styles for input fields within anchor tags */
+    width: 85%; /* Adjust the width as needed */
+    margin-top: 5px;
+    padding: 5px;
+  }
+
+  
+  button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .alert.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid transparent; 
+}
+
+.alert.alert-success a {
+    color: #0d8e50;
+}
+  .alert.alert-success:hover {
+    background-color: #c3e6cb;
+    border-color: #b1dfbb; 
+    color: #155724; 
+  }
+
+  
+  h1 {
+    text-align: center;
+  }
+
+
+  .widget-container {
+    display: flex;
+}
+
+.widget {
+    background-color: rgba(28, 134, 255, 0.911);
+    color: #333;
+    width: 180px;
+    height: 110px;
+    padding: 20px;
+    margin-right: 20px; /* Add some space between widgets */
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.widget:last-child {
+    margin-right: 0; /* No margin on the last widget */
+}
+
+.widget p {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.button {
+    background-color: #fff;
+    color: #333;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: auto;
+}
+
+.button:hover {
+    background-color: #ddd;
+}
+
+
+svg{
+    color: white;
+}

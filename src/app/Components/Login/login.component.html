@@ -1,0 +1,54 @@
+
+
+  <div class="container">
+    <div class="forms-container">
+      <div class="form-control signup-form">
+        
+        <div *ngIf="successMessage" class="alert alert-success">
+            {{ successMessage }}
+          </div>
+
+        <form [formGroup]="formReg" (ngSubmit)="registerUser()">
+
+            <h2>Signup</h2>
+
+          <input type="text"formControlName="email" placeholder="email" />
+          <input type="text" formControlName="matriculeFiscale" placeholder="matriculeFiscale" />
+          <input type="text" formControlName="role" placeholder="role" />
+          <input type="password" formControlName="password" placeholder="Password" />
+          <input type="text"  formControlName="name"placeholder="name" />
+          <button type="submit">Signup</button>
+        </form>
+      </div>
+      <div class="form-control signin-form">
+
+      
+        <div *ngIf="errorMessage" class="error-message">
+            {{ errorMessage }}
+          </div>
+        <form [formGroup]="formUser" (ngSubmit)="userauth()">
+        
+          <h2>Signin</h2>
+          <input type="text" formControlName="email"placeholder="email"  />
+          <input type="password" formControlName="password"  placeholder="Password" />
+          <button type="submit">Signin</button>
+
+        </form> 
+        <p routerLink="/resetPassword">reset Your Password<p>
+             
+      </div>
+    </div>
+    <div class="intros-container">
+      <div class="intro-control signin-intro">
+        <div class="intro-control__inner">
+          <h2>Welcome</h2>
+        </div>
+      </div>
+      <div class="intro-control signup-intro">
+        <div class="intro-control__inner">
+          <h2>Come join us!</h2>
+          <button id="signin-btn">Already have an account? Signin.</button>
+        </div>
+      </div>
+    </div>
+  </div>
